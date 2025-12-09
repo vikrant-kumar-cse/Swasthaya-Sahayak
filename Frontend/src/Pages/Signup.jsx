@@ -47,7 +47,7 @@ const Signup = () => {
     setSuccess("");
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/start", {
+      const res = await axios.post("https://swasthaya-sahayak50.onrender.com/auth/start", {
         name: form.name,
         email: form.email,
         phoneNumber: form.phoneNumber,
@@ -76,7 +76,7 @@ const Signup = () => {
     setSuccess("");
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/verify-otp", {
+      const res = await axios.post("https://swasthaya-sahayak50.onrender.com/auth/verify-otp", {
         email: form.email,
         otp: form.otp,
       });
@@ -107,7 +107,7 @@ const Signup = () => {
     setSuccess("");
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/complete", {
+      const res = await axios.post("https://swasthaya-sahayak50.onrender.com/auth/complete", {
         email: form.email,
         password: form.password,
         confirmPassword: form.confirmPassword,
